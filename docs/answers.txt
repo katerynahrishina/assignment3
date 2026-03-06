@@ -1,0 +1,66 @@
+Date Git Lab Tutorials completed: 03/06/2026
+Date GitHub Account created: 01/01/2025
+
+-----------------------------------------------------------
+QUESTION 1 - Git Status Output
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+-----------------------------------------------------------
+QUESTION 2 - How many commits have been done?
+Command used: git log --oneline | wc -l
+
+Total commits so far: 9
+-----------------------------------------------------------
+QUESTION 3 - When was README.md last modified?
+Command used: git log -1 --format="%cd" -- README.md
+
+README.md was last modified on: Fri Mar 6 15:53:56 2026 -0500
+-----------------------------------------------------------
+QUESTION 4 - Two reasons why branches are used
+1. Branches let developers work on new features or bug fixes without changing the main code.
+
+2. Branches allow multiple developers to work on different tasks at the same time and combine their work later.
+-----------------------------------------------------------
+QUESTION 5 - Difference between git log and git status
+git log shows the history of commits in the repository, including who made them and when.
+
+git status shows the current state of the project, including changed files, staged files, and untracked files.
+-----------------------------------------------------------
+QUESTION 6 - Command to see commits where Vehicle.h was committed
+git log -- Vehicle.h
+-----------------------------------------------------------
+QUESTION 7 - Command to see commits whose message contains "file"
+git log --grep="file"
+-----------------------------------------------------------
+QUESTION 8 - OOP Concepts
+Inheritance:
+A class can reuse features from another class.
+Example: a Car class inheriting from a Vehicle class.
+
+Polymorphism:
+Different objects can use the same method but behave differently.
+Example: a draw() method working differently for a circle and a rectangle.
+
+Encapsulation:
+Data and the functions that work with it are kept together inside a class, and direct access to data is limited to protect it.
+-----------------------------------------------------------
+QUESTION 9 - Dictator & Lieutenants vs Integration Manager
+In the Integration Manager workflow, one person manages all merges and resolves conflicts from developers.
+
+In the Dictator and Lieutenants workflow, several lieutenants first merge work from smaller groups of developers. The dictator then merges their work into the main repository.
+
+The main difference is that Integration Manager has one central integrator, while Dictator and Lieutenants uses a hierarchy with multiple levels.
+-----------------------------------------------------------
+QUESTION 10 - How 100 developers benefit from Dictator & Lieutenants
+If 100 developers use a centralized workflow, they all push to the same repository, which creates many conflicts and slows development.
+
+With the Dictator and Lieutenants workflow, developers are split into smaller groups managed by lieutenants. Each lieutenant handles conflicts in their group, and the dictator merges their work.
+
+This reduces conflicts and makes it easier to manage large teams.
+-----------------------------------------------------------
